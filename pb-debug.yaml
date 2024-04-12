@@ -1,6 +1,6 @@
 - name: Sample playbook - Hello World, AWX
   hosts: all
-  var:
+  vars:
     message: "Hello World, AWX"
   
   tasks:
