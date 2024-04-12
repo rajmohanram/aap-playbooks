@@ -1,6 +1,6 @@
 - name: Install packages in Ubuntu server
   hosts: ubuntu_servers
-  var:
+  vars:
     packages_to_install:
       - apache2
       - vsftpd
