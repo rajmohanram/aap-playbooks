@@ -1,5 +1,6 @@
 - name: Sample playbook - Hello World, AWX
   hosts: all
+  gather_facts: no
   vars:
     message: "Hello World, AWX"
   
