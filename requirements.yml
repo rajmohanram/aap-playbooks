@@ -1,0 +1,4 @@
+---
+collections:
+  - name: geerlingguy.k8s
+    version: "0.10.0"
