@@ -13,3 +13,13 @@
     - name: Debug vars
       debug:
         var: vars
+
+    #  run ansible-galaxy collection list
+    - name: Display Ansible Galaxy collections
+      ansible.builtin.command:
+        cmd: ansible-galaxy collection list
+      register: galaxy_collections
+      
+    - name: Show Ansible Galaxy collections
+      ansible.builtin.debug:
+        var: galaxy_collections.stdout_lines
