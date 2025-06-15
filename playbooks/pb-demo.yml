@@ -1,5 +1,6 @@
 - name: Sample playbook - Hello World, AWX
   hosts: localhost
+  connection: local
   gather_facts: no
   vars:
     message: "Hello World, AWX"
@@ -8,3 +9,7 @@
     - name: Print Hello World
       debug:
         var: message
+
+    - name: Debug vars
+      debug:
+        var: vars
